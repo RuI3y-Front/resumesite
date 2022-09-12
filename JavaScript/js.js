@@ -35,26 +35,8 @@ window.addEventListener('scroll',scrollup)
 
 
 // NAV STIKY
-
-const header=document.querySelector('.header')
-const home__content=document.querySelector('.information')
-const nav=document.querySelector('.nav')
-const stickyNav =function(entries){
-const [entry]=entries;
-console.log(entries);
-if(!entry.isIntersecting){
-  header.classList.add('scroll-header')
-  console.log('s');
+function scrollHeader(){
+  const header=document.querySelector('.header')
+  if(this.scrollY >=50)header.classList.add('scroll-header');else header.classList.remove('scroll-header')
 }
-}
-
-
-const headerObserver=new IntersectionObserver(stickyNav,{
-  root:null,
-  threshold:.1,
-  rootMargin:'-4px',
-  
-})
-
-
-headerObserver.observe(home__content)
+window.addEventListener('scroll',scrollHeader)
