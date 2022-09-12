@@ -32,3 +32,29 @@ const scroll=document.getElementById('scroll-up')
     scroll.classList.add('show-scroll')
   }}
 window.addEventListener('scroll',scrollup)
+
+
+// NAV STIKY
+
+const header=document.querySelector('.header')
+const home__content=document.querySelector('.information')
+const nav=document.querySelector('.nav')
+const stickyNav =function(entries){
+const [entry]=entries;
+console.log(entries);
+if(!entry.isIntersecting){
+  header.classList.add('scroll-header')
+  console.log('s');
+}
+}
+
+
+const headerObserver=new IntersectionObserver(stickyNav,{
+  root:null,
+  threshold:.1,
+  rootMargin:'-4px',
+  
+})
+
+
+headerObserver.observe(home__content)

@@ -170,7 +170,11 @@ background: var(--container-color);
         column-gap: 0.25rem;
     }
 
-
+    .scroll-header {
+        background-color: var(--body-color);
+        box-shadow: 0 1px 4px var(--shadow);
+        padding-bottom: 1.2rem;
+    }
     .nav__list{
         display: flex;
         align-items: center;
