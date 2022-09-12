@@ -75,6 +75,9 @@ input {
     font-weight: 600;
     font-size: var(--h1-font-size);
 }
+.lazy-img {
+    filter: blur(20px);
+  }
 .section{
 padding: 7rem 0 2rem;
 }
@@ -94,6 +97,7 @@ padding: 7rem 0 2rem;
     border-radius: 0.4rem;
     font-weight: var(--font-medium);
     transition: .3s;
+    cursor: pointer;
 }
 .button:hover{
     background: var(--first-color-alt);
@@ -138,6 +142,7 @@ background: var(--container-color);
     font-size: 2rem;
     position: absolute;
     right: 0.66rem;
+    cursor: pointer;
 }
 /*TODO: Style Header */
     .header{
