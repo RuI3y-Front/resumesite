@@ -75,11 +75,16 @@ input {
     font-weight: 600;
     font-size: var(--h1-font-size);
 }
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
 .lazy-img {
     filter: blur(20px);
   }
 .section{
 padding: 7rem 0 2rem;
+transition:transform 1s, opacity 1s
 }
 .container {
     max-width: 968px;

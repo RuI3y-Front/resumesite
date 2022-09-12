@@ -57,7 +57,6 @@ login__close.addEventListener('click',function(){
 
 //TODO:Lazy Loading 
 const dataScr=document.querySelector('.section__title')
-console.log(dataScr);
 const srcFunc=function(elm,observer){
 const [srcPic]=elm;
   if(!srcPic.isIntersecting)return
@@ -66,23 +65,37 @@ dataPic.forEach(e=>{
 
   e.src=e.dataset.src;
   e.addEventListener('load',function(){
-    console.log(e);
     e.classList.remove('lazy-img')
     })
 })
 observer.unobserve(srcPic.target);
 }
 
-
-
-
-
 const dataSrcObserver=new IntersectionObserver(srcFunc,{
 root:null,
 threshold:0,
 rootMargin:'100px'
 })
-
-
-
 dataSrcObserver.observe(dataScr)
+
+//TODO: Section load
+
+const allSections = document.querySelectorAll('.section');
+
+const funSection=function(entry,observe){
+  const [section]=entry;
+  if(!section.isIntersecting)return
+
+  section.target.classList.remove('section--hidden')
+}
+
+
+const sectionObsever=new IntersectionObserver(funSection,{
+  root:null,
+threshold:0,
+
+})
+
+allSections.forEach(e=>{
+  sectionObsever.observe(e)
+})
