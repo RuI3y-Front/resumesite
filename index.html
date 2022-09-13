@@ -18,7 +18,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">
-                <img  src="imgs/logo.jpg">
+                <img  src="imgs/logofake.jpg" data-src="imgs/logo.jpg" class="lazy-img">
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -38,6 +38,10 @@
                         <a href="index.html" class="nav__link ">خونه</a>
                     </li>
                 </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                  </div>
+                
             </div>
             <div class="nav__btns">
                 <div class="login__toggle" id="login-button">
@@ -47,30 +51,35 @@
                 </div>
                
               </div>
+              <div class="nav__toggle" id="nav__toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
         </nav>
+        <div class="login">
+            <i class="bx bx-x login__close" id="login-close"></i>
+            <h2 class="login__title-center">وارد اکانت شوید</h2>
+            <from action class="login__form grid">
+                <div class="login__content">
+                    <label class="login__lable">ایمیل</label>
+                    <input type="email" class="login__input">
+                </div>
+                <div class="login__content">
+                    <label class="login__lable">پسورد</label>
+                    <input type="password" class="login__input">
+                </div>
+                <div>
+                    <a class="button">وارد شوید</a>
+                </div>
+                <div>
+                    <p class="signup">رمز یادتان نیست?
+                        <a href="regsiter.html">حالا وارد شوید</a>
+                    </p>
+                </div>
+            </from>
+        </div>
     </header>
-    <div class="login">
-        <i class="bx bx-x login__close" id="login-close"></i>
-        <h2 class="login__title-center">وارد اکانت شوید</h2>
-        <from action class="login__form grid">
-            <div class="login__content">
-                <label class="login__lable">ایمیل</label>
-                <input type="email" class="login__input">
-            </div>
-            <div class="login__content">
-                <label class="login__lable">پسورد</label>
-                <input type="password" class="login__input">
-            </div>
-            <div>
-                <a class="button">وارد شوید</a>
-            </div>
-            <div>
-                <p class="signup">رمز یادتان نیست?
-                    <a href="regsiter.html">حالا وارد شوید</a>
-                </p>
-            </div>
-        </from>
-    </div>
+   
+   
     <main class="main">
         <section class="container">
             <div class="swiper home-swiper">

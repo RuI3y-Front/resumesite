@@ -28,6 +28,15 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+        /*========== Margenes Bottom ==========*/
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.5rem;
+        --mb-3: 3rem;
+    
 
 }
 
@@ -68,6 +77,22 @@ button,
 input {
     border: none;
     outline: none;
+}
+::-webkit-scrollbar {
+    width: .60rem;
+    background: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+.nav__menu_show{
+    right: 0 !important;
+}
+.nav__toggle{
+    display: none;
 }
 .section__title{
     text-align: center;
@@ -112,13 +137,13 @@ transition:transform 1s, opacity 1s
     position: fixed;
     width: 400px;
     height: 100%;
-    background: var;
     background: var(--body-color);
     z-index: 10;
     padding: 3.5rem 2rem;
     transition: .5s;
     box-shadow: -2px 0 4px var(--shadow);
     right: -100%;
+    top: 0;
 }
 .login__title-center{
     text-align: center;
@@ -184,6 +209,9 @@ background: var(--container-color);
         background-color: var(--body-color);
         box-shadow: 0 1px 4px var(--shadow);
         padding-bottom: 1.2rem;
+    }
+    .nav__close{
+        display: none;
     }
     .nav__list{
         display: flex;
@@ -348,22 +376,22 @@ background: var(--container-color);
 }
 .tutorial__name::after{
     content: '';
-    height: 4px;
-    width: 90px;
+    height: 2px;
+    width: 181px;
     background-color: var(--first-color);
     position: absolute;
     top: 106%;
-    left: 45%;
+    left: 44%;
  
 }
 .tutorial__name::before{
     content: '';
-    height: 4px;
-    width: 60px;
+    height: 2px;
+    width: 100px;
     background-color: var(--first-color);
     position: absolute;
     top: 131%;
-    left: 46%;
+    left: 47%;
 }
 .tutorial__course{
     margin-top: 2rem;
@@ -557,3 +585,267 @@ bottom: 3rem !important;
     color:white;
     font-size: var(--h2-font-size);
 }
+
+
+
+@media screen and (max-width: 992px) {
+    .home__img{
+        height: 270px;
+        width: 237px;
+    }
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+    .section__title{
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-2);
+    }
+    .button{
+        padding: .75rem 1.25rem;
+    }
+    .home__group{
+        justify-content: start;
+        align-content: space-between
+    }
+    .home__details{
+        position: absolute;
+        top: 0%;
+        left: 0;
+    }
+    .home__indicator{
+        top: 113px;
+    right: 85%;
+    }
+    .home__indicator::before{
+        top: -67px;
+        right: 32%;
+    }
+    .home__title{
+        font-size: var(--h1-font-size);
+    }
+    .home__description{
+        font-size: var(--small-font-size);
+    }
+    .info__container img{
+        width: 180px;
+        padding-right: 20px;
+    }
+    .info__container{
+        column-gap: 6rem;
+    }
+    .tutorial__course{
+        width: 263px;
+        padding: 1rem 0;
+    }
+    .tutorial__info{
+        padding:27px 1.67rem ;
+    }
+    .tutorial__button{
+        right: -4rem;
+    }
+    .info__item span{
+        font-size: var(--smaller-font-size);
+    }
+    .ability{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav__toggle{
+        display: block;
+    }
+    body{
+        margin: 3rem 0 0 0;
+    }
+    .section{
+        padding: 4.5rem 0 2rem;
+    }
+    .home__content{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .home__group{
+        justify-content: center;
+    }
+    .home__title {
+        font-size: 1.75rem;
+    }
+    .home__subtitle{
+        font-size: 1.25rem;
+    }
+
+    .info__container{
+        grid-template-columns:1fr;  
+        column-gap: 2rem;
+        text-align: center;
+        padding:1rem 0;
+    }
+    .info__data{
+        padding: 0;
+    }
+    .info__container img{
+      margin: auto;
+    }
+    .button {
+        padding: 0.55rem 0.77rem;
+    }
+    .button--flex{
+        font-size: .89rem;
+    }
+    
+    .nav__menu {
+        position: fixed;
+        background-color: var(--body-color);
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 6rem 2rem 3.5rem;
+        transition: .4s;
+    }
+    .nav__list{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .nav{
+        padding: 0;
+    }
+
+    .home__group{
+        padding-top: 2rem;
+    }
+    .scroll-header{
+        padding-bottom: 0;
+    }
+    
+    .nav__close{
+        position: absolute;
+        top: 1.5rem;
+        right: 3rem;
+        font-size: 2rem;
+        padding: 0.65rem;
+        display: block;
+    }
+    .home__details{
+        top: 17%;
+        left: 0;
+        right: 4rem;
+    }
+    .home__indicator{
+        right: 3.5rem;
+        top: 7rem;
+    }
+    .tutorial__name::before{
+        left: 42%;
+    }
+    .tutorial__name::after{
+        left: 38%;
+        width: 153px;
+    }
+    .tutorial__info{
+        padding: 0rem 0.5rem 1.65rem;
+    }
+    .tutorial__img{
+    padding: 0.5rem;
+    }
+    .about__h2{
+        font-size: var(--h3-font-size);
+    }
+    .about__me p{
+        font-size: var(--small-font-size);
+    }
+    .info__item p{
+        font-size: 14px;
+    }
+    .info__item span{
+        font-size:.70rem;
+    }
+    .skill-item h5{
+        font-size: var(--small-font-size);
+    }
+
+    .skill-percent{
+     font-size: 14px;
+    }
+
+    .progress{
+        height: 4px;
+    }
+}
+@media screen and (max-width: 576px) {
+   .login{
+    width: 100%;
+   }
+    .section{
+        padding: 3.5rem 0 1.5rem;
+    }
+    .info__data{
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     
+    }
+    .info__data h2{
+        font-size: var(--h3-font-size);
+
+    }
+    .info__data p{
+        font-size: var(--small-font-size);
+        display:block;
+        margin:auto;
+        width: 60%;
+    }
+    .ability__info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .ability__program{
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+    .info__container img{
+        width: 150px;
+    }
+    .home__indicator{
+        display: none;
+        
+    }
+    .home__details{
+        display: none;
+    }
+  
+}
+@media screen and (max-width: 320px) {
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .login__content{
+        padding: 0;
+    }
+  
+    .login__lable{
+        padding: 0.5rem 0.5rem;
+    }
+    .nav{
+        column-gap: 0;
+    }
+    .scrollup {
+        right: 80%;
+    }
+    .info__item{
+        padding-right: 0;
+    }
+    .tutorial__name::before{
+        left: 35%;
+    }
+    .tutorial__name::after{
+        left: 28%;
+        width: 137px;
+    }
+   
+  
+ 
+
+   }

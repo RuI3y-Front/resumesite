@@ -87,15 +87,31 @@ const funSection=function(entry,observe){
   if(!section.isIntersecting)return
 
   section.target.classList.remove('section--hidden')
+  observe.unobserve(section.target)
 }
 
 
 const sectionObsever=new IntersectionObserver(funSection,{
   root:null,
 threshold:0,
-
+rootMargin:"100px"
 })
 
 allSections.forEach(e=>{
   sectionObsever.observe(e)
 })
+
+//TODO: OPEN MEUNO
+
+const navToggle=document.querySelector('.nav__toggle')
+const nav__menu=document.querySelector('.nav__menu')
+navToggle.addEventListener('click',function(e){
+  console.log(e);
+  nav__menu.classList.add('nav__menu_show')
+})
+
+const nav__close=document.querySelector('.nav__close')
+nav__close.addEventListener('click',function(){
+  nav__menu.classList.remove('nav__menu_show')
+})
+
