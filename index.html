@@ -1,304 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-  />
-  <link rel="stylesheet" href="style/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style/style.css">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="colors/color1.css" />
     <title>Project two</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--=======Header =========-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="index.html" class="nav-logo">
-                <img  src="imgs/logofake.jpg" data-src="imgs/logo.jpg" class="lazy-img">
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">صفحه اصلی</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link ">تماس با ما</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link ">منو کشویی</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link ">طراحی سایت</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link ">خونه</a>
-                    </li>
-                </ul>
-                <div class="nav__close" id="nav-close">
-                    <i class="bx bx-x"></i>
-                  </div>
-                
-            </div>
-            <div class="nav__btns">
-                <div class="login__toggle" id="login-button">
-                    
-                  <i class="bx bx-user"></i>
-                 
-                </div>
-               
-              </div>
-              <div class="nav__toggle" id="nav__toggle">
-                <i class="bx bx-grid-alt"></i>
-            </div>
-        </nav>
-        <div class="login">
-            <i class="bx bx-x login__close" id="login-close"></i>
-            <h2 class="login__title-center">وارد اکانت شوید</h2>
-            <from action class="login__form grid">
-                <div class="login__content">
-                    <label class="login__lable">ایمیل</label>
-                    <input type="email" class="login__input">
-                </div>
-                <div class="login__content">
-                    <label class="login__lable">پسورد</label>
-                    <input type="password" class="login__input">
-                </div>
-                <div>
-                    <a class="button">وارد شوید</a>
-                </div>
-                <div>
-                    <p class="signup">رمز یادتان نیست?
-                        <a href="regsiter.html">حالا وارد شوید</a>
-                    </p>
-                </div>
-            </from>
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="imgs/logofake.jpg"
+            data-src="imgs/logo.jpg"
+            class="lazy-img"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">صفحه اصلی</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">تماس با ما</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">منو کشویی</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">طراحی سایت</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">خونه</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
         </div>
+        <div class="nav__btns">
+          <div class="login__toggle" id="login-button">
+            <i class="bx bx-user"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav__toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+      <div class="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">وارد اکانت شوید</h2>
+        <from action class="login__form grid">
+          <div class="login__content">
+            <label class="login__lable">ایمیل</label>
+            <input type="email" class="login__input" />
+          </div>
+          <div class="login__content">
+            <label class="login__lable">پسورد</label>
+            <input type="password" class="login__input" />
+          </div>
+          <div>
+            <a class="button">وارد شوید</a>
+          </div>
+          <div>
+            <p class="signup">
+              رمز یادتان نیست?
+              <a href="regsiter.html">حالا وارد شوید</a>
+            </p>
+          </div>
+        </from>
+      </div>
     </header>
-   
-   
+
     <main class="main">
-        <section class="container">
-            <div class="swiper home-swiper">
-                <div class="swiper-wrapper">
-                    <!-- Home Swiper 1 -->
-                    <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="imgs/rusmeOrg.png" alt="" class="home__img ">
-                                    <div class="home__indicator"></div>
-                                    <div class="home__details">
-                                        <h4>نمونه رزومه</h4>
-                                        <span>من</span>
-                                    </div>
-                                </div>
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">  #1 سایت </h3>
-                                    <h1 class="home__title">سایت معمولی <br>عملکرد <br>عالی </h1>
-                                    <p class="home__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                                    <div class="home__buttom">
-                                        <a href="https://rui3y-front.github.io/Russeme/" class="button">کلیک کن</a>
-                                        <a href="https://rui3y-front.github.io/Russeme/" class="button--link button--flex ">
-                                            توضیحات بیشتر
-
-                                            <i class="bx bx-left-arrow-alt button__icon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="imgs/NebrasOrg.png" alt="" class="home__img ">
-                                    <div class="home__indicator"></div>
-                                    <div class="home__details">
-                                        <h4>نمونه رزومه</h4>
-                                        <span>من</span>
-                                    </div>
-                                </div>
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">  #2 دیکشرنی </h3>
-                                    <h1 class="home__title">  سایت نبراس<br> با بهترین <br>عملکرد </h1>
-                                    <p class="home__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                                    <div class="home__buttom">
-                                        <a href="https://condescending-perlman-5ac973.netlify.app/" class="button">کلیک کن</a>
-                                        <a href="https://condescending-perlman-5ac973.netlify.app/" class="button--link button--flex ">
-                                            توضیحات بیشتر
-
-                                            <i class="bx bx-left-arrow-alt button__icon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="imgs/bazrgniORG.png" alt="" class="home__img ">
-                                    <div class="home__indicator"></div>
-                                    <div class="home__details">
-                                        <h4>نمونه رزومه</h4>
-                                        <span>من</span>
-                                    </div>
-                                </div>
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">  #3 بازرگانی </h3>
-                                    <h1 class="home__title"> سایت بازرگانی <br> با بهترین <br> رسپانسیو</h1>
-                                    <p class="home__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                                    <div class="home__buttom">
-                                        <a href="https://rui3y-front.github.io/Site-Bazargani/" class="button">کلیک کن</a>
-                                        <a href="https://rui3y-front.github.io/Site-Bazargani/" class="button--link button--flex ">
-                                            توضیحات بیشتر
-
-                                            <i class="bx bx-left-arrow-alt button__icon"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+      <section class="container">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <!-- Home Swiper 1 -->
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="imgs/rusmeOrg.png" alt="" class="home__img" />
+                  <div class="home__indicator"></div>
+                  <div class="home__details">
+                    <h4>نمونه رزومه</h4>
+                    <span>من</span>
+                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+                <div class="home__data">
+                  <h3 class="home__subtitle">#1 سایت</h3>
+                  <h1 class="home__title">
+                    سایت معمولی <br />عملکرد <br />عالی
+                  </h1>
+                  <p class="home__description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <div class="home__buttom">
+                    <a
+                      href="https://rui3y-front.github.io/Russeme/"
+                      class="button"
+                      >کلیک کن</a
+                    >
+                    <a
+                      href="https://rui3y-front.github.io/Russeme/"
+                      class="button--link button--flex"
+                    >
+                      توضیحات بیشتر
 
-        </section>
-        <section class="information section section--hidden">
-            <div class="info__container grid container">
-                    <img src="imgs/undraw_inlove_b9ay.png" alt="My Pic"></img>
-                    <div class="info__data">
-                        <h2> سلام امیر هستم طراح سایت</h2>
-                        <p> این سایت برگرفته از سایت هایه خارجی است با تغیرات فراوان.</p>
-                        <a href="index.html" class="button">توضیحات</a>
+                      <i class="bx bx-left-arrow-alt button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="imgs/NebrasOrg.png" alt="" class="home__img" />
+                  <div class="home__indicator"></div>
+                  <div class="home__details">
+                    <h4>نمونه رزومه</h4>
+                    <span>من</span>
+                  </div>
+                </div>
+                <div class="home__data">
+                  <h3 class="home__subtitle">#2 دیکشرنی</h3>
+                  <h1 class="home__title">
+                    سایت نبراس<br />
+                    با بهترین <br />عملکرد
+                  </h1>
+                  <p class="home__description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <div class="home__buttom">
+                    <a
+                      href="https://condescending-perlman-5ac973.netlify.app/"
+                      class="button"
+                      >کلیک کن</a
+                    >
+                    <a
+                      href="https://condescending-perlman-5ac973.netlify.app/"
+                      class="button--link button--flex"
+                    >
+                      توضیحات بیشتر
 
-                    </div>
-            </div>
-        </section>
-        <section class=" section section--hidden">
-            <h2 class="section__title tutorial__name">تمرینات جاوااسکریپت</h2>
-            <div class="container">
-<div class="swiper new-swiper">
-<div class="swiper-wrapper">
-         <!-- Tutorial__1 -->
-            <div class=" tutorial__course swiper-slide">
-                <img src="imgs/dozgamefake.png" alt="" class="tutorial__img lazy-img" data-src="imgs/dozgame.png">
+                      <i class="bx bx-left-arrow-alt button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="imgs/bazrgniORG.png" alt="" class="home__img" />
+                  <div class="home__indicator"></div>
+                  <div class="home__details">
+                    <h4>نمونه رزومه</h4>
+                    <span>من</span>
+                  </div>
+                </div>
+                <div class="home__data">
+                  <h3 class="home__subtitle">#3 بازرگانی</h3>
+                  <h1 class="home__title">
+                    سایت بازرگانی <br />
+                    با بهترین <br />
+                    رسپانسیو
+                  </h1>
+                  <p class="home__description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <div class="home__buttom">
+                    <a
+                      href="https://rui3y-front.github.io/Site-Bazargani/"
+                      class="button"
+                      >کلیک کن</a
+                    >
+                    <a
+                      href="https://rui3y-front.github.io/Site-Bazargani/"
+                      class="button--link button--flex"
+                    >
+                      توضیحات بیشتر
+
+                      <i class="bx bx-left-arrow-alt button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="information section section--hidden">
+        <div class="info__container grid container">
+          <img
+            src="imgs/undraw_inlove_fake.png"
+            alt="My Pic"
+            data-src="imgs/undraw_inlove_b9ay.png"
+          />
+          <div class="info__data">
+            <h2>سلام امیر هستم طراح سایت</h2>
+            <p>این سایت برگرفته از سایت هایه خارجی است با تغیرات فراوان.</p>
+            <a href="index.html" class="button">توضیحات</a>
+          </div>
+        </div>
+      </section>
+      <section class="section section--hidden">
+        <h2 class="section__title tutorial__name">تمرینات جاوااسکریپت</h2>
+        <div class="container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <!-- Tutorial__1 -->
+              <div class="tutorial__course swiper-slide">
+                <img
+                  src="imgs/dozgamefake.png"
+                  alt=""
+                  class="tutorial__img lazy-img"
+                  data-src="imgs/dozgame.png"
+                />
                 <h3 class="tutorial__tag">بازی دوز</h3>
-                <p  class="tutorial__info">این بازی  دوز هست توسط جاوااسکریپت خام زده شده </p>
+                <p class="tutorial__info">
+                  این بازی دوز هست توسط جاوااسکریپت خام زده شده
+                </p>
                 <a class="button tutorial__button" href="details.html">
-                    <i class="bx bx-low-vision new__icon"></i>
-                  </a>
-            </div>
-         <!-- Tutorial__2 -->
-            <div class=" tutorial__course swiper-slide">
-                <img src="imgs/todofake.png" alt="" class="tutorial__img lazy-img" data-src="imgs/ToDOO.png">
+                  <i class="bx bx-low-vision new__icon"></i>
+                </a>
+              </div>
+              <!-- Tutorial__2 -->
+              <div class="tutorial__course swiper-slide">
+                <img
+                  src="imgs/todofake.png"
+                  alt=""
+                  class="tutorial__img lazy-img"
+                  data-src="imgs/ToDOO.png"
+                />
                 <h3 class="tutorial__tag">یاداشت</h3>
-                <p  class="tutorial__info">  این دفترچه یاداشت روزانه میباشددارای قابلیت فراوان </p>
+                <p class="tutorial__info">
+                  این دفترچه یاداشت روزانه میباشددارای قابلیت فراوان
+                </p>
                 <a class="button tutorial__button" href="details.html">
-                    <i class="bx bx-low-vision new__icon"></i>
-                  </a>
-            </div>
-         <!-- Tutorial__3 -->
-            <div class=" tutorial__course swiper-slide">
-                <img src="imgs/questionGamefake.png" alt="" class="tutorial__img lazy-img"  data-src="imgs/questionGame.png">
+                  <i class="bx bx-low-vision new__icon"></i>
+                </a>
+              </div>
+              <!-- Tutorial__3 -->
+              <div class="tutorial__course swiper-slide">
+                <img
+                  src="imgs/questionGamefake.png"
+                  alt=""
+                  class="tutorial__img lazy-img"
+                  data-src="imgs/questionGame.png"
+                />
                 <h3 class="tutorial__tag">بازی سوالات</h3>
-                <p  class="tutorial__info">این بازی  سوالات هست ک در اون چند سوال پرسیده میشود </p>
+                <p class="tutorial__info">
+                  این بازی سوالات هست ک در اون چند سوال پرسیده میشود
+                </p>
                 <a class="button tutorial__button" href="details.html">
-                    <i class="bx bx-low-vision new__icon"></i>
-                  </a>
+                  <i class="bx bx-low-vision new__icon"></i>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-    </div>
-        </section>
-        <section class="section container section--hidden">
-            <div class="ability">
-            <h1 class="section__title ability__h1">درباره من</h1>
-               
-                    <div class="row">
-                        <div class="about__me">
-                            <h2 class="about__h2">امیر نوری هستم طراح سایت .</h2>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
-                        </div>
-                    </div>
-            <div class="row">
-                    <div class="ability__info">
+      </section>
+      <section class="section container section--hidden">
+        <div class="ability">
+          <h1 class="section__title ability__h1">درباره من</h1>
 
-                        <div class="row">
-                            <div class="info__item">
-                              <p>تولد : <span>16 دی 1999</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>سن : <span>25</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>وب سایت: <span>www.google.com</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>ایمیل: <span>ru13y051@gmail.com</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>Degree: <span>Css</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>تلفن: <span>09377719178</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>شهر: <span>مشهد</span></p>
-                            </div>
-                            <div class="info__item">
-                              <p>فری لنسر: <span>در حال تکامل</span></p>
-                            </div>
-                          </div>
-
-                          
-                    </div>
-
-                    <div class="ability__program">
-                        <div class="skill padd-15">
-                            <div class="row">
-                              <div class="skill-item padd-15">
-                                <h5>Js</h5>
-                                <div class="progress">
-                                  <div class="progress-in" style="width: 86%"></div>
-                                  <div class="skill-percent">86%</div>
-                                </div>
-                              </div>
-                              <div class="skill-item padd-15">
-                                <h5>Css</h5>
-                                <div class="progress">
-                                  <div class="progress-in" style="width: 66%"></div>
-                                  <div class="skill-percent">66%</div>
-                                </div>
-                              </div>
-                              <div class="skill-item padd-15">
-                                <h5>HTML</h5>
-                                <div class="progress">
-                                  <div class="progress-in" style="width: 95%"></div>
-                                  <div class="skill-percent">95%</div>
-                                </div>
-                              </div>
-                              <div class="skill-item padd-15">
-                                <h5>Tailwind</h5>
-                                <div class="progress">
-                                  <div class="progress-in" style="width: 50%"></div>
-                                  <div class="skill-percent">50%</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
+          <div class="row">
+            <div class="about__me">
+              <h2 class="about__h2">امیر نوری هستم طراح سایت .</h2>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ability__info">
+              <div class="row">
+                <div class="info__item">
+                  <p>تولد : <span>16 دی 1999</span></p>
                 </div>
-                <a class="button btn__info"> اطلاعات دانلود</a>
+                <div class="info__item">
+                  <p>سن : <span>25</span></p>
+                </div>
+                <div class="info__item">
+                  <p>وب سایت: <span>www.google.com</span></p>
+                </div>
+                <div class="info__item">
+                  <p>ایمیل: <span>ru13y051@gmail.com</span></p>
+                </div>
+                <div class="info__item">
+                  <p>Degree: <span>Css</span></p>
+                </div>
+                <div class="info__item">
+                  <p>تلفن: <span>09377719178</span></p>
+                </div>
+                <div class="info__item">
+                  <p>شهر: <span>مشهد</span></p>
+                </div>
+                <div class="info__item">
+                  <p>فری لنسر: <span>در حال تکامل</span></p>
+                </div>
+              </div>
             </div>
-        </section>
-    </main>
 
-    <a href="#" class="scrollup " id="scroll-up">
-        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+            <div class="ability__program">
+              <div class="skill padd-15">
+                <div class="row">
+                  <div class="skill-item padd-15">
+                    <h5>Js</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 86%"></div>
+                      <div class="skill-percent">86%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Css</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 66%"></div>
+                      <div class="skill-percent">66%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 95%"></div>
+                      <div class="skill-percent">95%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Tailwind</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 50%"></div>
+                      <div class="skill-percent">50%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button btn__info"> اطلاعات دانلود</a>
+        </div>
+      </section>
+    </main>
+    <footer class="section">
+      <div class="footer__container container grid">
+       
+       
+        <div class="footer__content">
+          <h3 class="footer__title">سایت</h3>
+          <ul class="footer__links">
+            <li>کد تمیز</li>
+            <li>اسلایدر</li>
+            <li>رسپانسیو</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">سرویس</h3>
+          <ul class="footer__links">
+            <li>کد جاوااسکریپت</li>
+            <li>تایلویند</li>
+            <li> ui ux  </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">در حال اموزش</h3>
+          <ul class="footer__links">
+            <li>ویو جی اس</li>
+            <li>پینیا</li>
+            <li>جی اس خام</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+            <a class="footer__logo"> طراحی سایت</a>
+            <p class="footer__description">راه ارتباطی با من </p>
+            <div class="footer_soical">
+              <a class="footer__social-link"> <i class="bx bxl-facebook"></i></a>
+              <a class="footer__social-link"> <i class="bx bxl-instagram-alt"></i></a>
+              <a class="footer__social-link"> <i class="bx bxl-telegram"></i></a>
+          </div>
+          </div>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
     </a>
-    <script src='JavaScript/swiper-bundle.min.js'></script>
+    <script src="JavaScript/swiper-bundle.min.js"></script>
     <script src="JavaScript/js.js"></script>
-</body>
+  </body>
 </html>
